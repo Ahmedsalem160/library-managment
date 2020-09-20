@@ -15,7 +15,7 @@ class CreateRoofsTable extends Migration
     {
         Schema::create('roofs', function (Blueprint $table) {
             $table->id();
-            $table->integer('category_id')->unsigned();
+            $table->bigInteger('category_id')->unsigned();
             $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
