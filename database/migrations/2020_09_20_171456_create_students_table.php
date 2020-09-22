@@ -17,8 +17,8 @@ class CreateStudentsTable extends Migration
             $table->id();
             $table->text('fname');
             $table->text('lname');
-            $table->text('email');
-            $table->text('password');
+            $table->text('email')->unique();
+            $table->text('password')->unique();
             $table->text('phone');
             $table->text('img');
             $table->text('addr');
