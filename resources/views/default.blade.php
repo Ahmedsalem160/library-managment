@@ -10,7 +10,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('template/img/favicon.ico')}}">
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{asset('template/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('template/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('template/css/slicknav.css')}}">
     <link rel="stylesheet" href="{{asset('template/css/flaticon.css')}}">
@@ -24,6 +23,7 @@
     <link rel="stylesheet" href="{{asset('template/css/slick.css')}}">
     <link rel="stylesheet" href="{{asset('template/css/nice-select.css')}}">
     <link rel="stylesheet" href="{{asset('template/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('template/css/bootstrap.min.css')}}">
 
 </head>
 

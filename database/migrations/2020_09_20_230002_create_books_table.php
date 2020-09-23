@@ -17,7 +17,7 @@ class CreateBooksTable extends Migration
             $table->id();
             $table->text('name');
             $table->text('author');
-
+            $table->text('description');
 
             $table->bigInteger('borrowed')->unsigned();
             $table->foreign('borrowed')->references('id')->on('users');

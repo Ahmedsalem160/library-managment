@@ -12,11 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
 Route::view('/index','index');
-
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,5 +22,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 Route::resource('admin', AdminController::class);
 Route::resource('students', StudentController::class);
-Route::resource('books', BookController::class);
+Route::resource('books', App\Http\Controllers\BookController::class);
 
