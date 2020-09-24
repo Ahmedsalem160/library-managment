@@ -1,9 +1,9 @@
 
-@extends('layouts.app')
+@extends('default')
 @section('content')
-<table class="table table-hover table-dark" style="text-align: center">
-    <thead>
-        <tr style="background-color: #1e2529">
+<table class="table table-hover" style="text-align: center">
+    <thead class=" thead-light">
+        <tr>
             <th scope="col">#book</th>
             <th scope="col">Book Name</th>
             <th scope="col">Description</th>
@@ -35,4 +35,4 @@
         </tr>
     </tbody>
 </table>
-@endsection
+@stop
