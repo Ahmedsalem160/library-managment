@@ -40,6 +40,9 @@ class BookController extends Controller
         // book::create($request->all());
         // return redirect()->route('books.index');
         $book= new Book();
+        $book->borrowed=1;
+        $book->roof_id=1;
+        $book->category_id=1;
         $book->name=$request->name;
         $book->author=$request->author;
         $book->description=$request->description;
@@ -68,6 +71,7 @@ class BookController extends Controller
     public function edit($id)
     {
         $book = book::find($id);
+        //return ('welcom');
         return view("books.edit", ['book' => $book]);
     }
 
@@ -81,7 +85,13 @@ class BookController extends Controller
     public function update(Request $request, $id)
     {
         $book = book::find($id);
-        book::create($request->all());
+        $book->borrowed=1;
+        $book->roof_id=1;
+        $book->category_id=1;
+        $book->name=$request->name;
+        $book->author=$request->author;
+        $book->description=$request->description;
+        $book->save();
         return redirect()->route('books.index');
     }
 
@@ -95,5 +105,11 @@ class BookController extends Controller
     {
         book::find($id)->delete();
         return redirect()->route('books.index');
+    }
+    public function showall()
+    {
+        $books = Book::all();
+
+        return view("books.showall",["books"=>$books]);
     }
 }

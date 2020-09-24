@@ -26,7 +26,7 @@ Route::get('registerStudent', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-Route::resource('admin', App\Http\Controllers\AdminController::class);
-Route::resource('students', App\Http\Controllers\StudentController::class);
 Route::resource('books', App\Http\Controllers\BookController::class);
+Route::get('books.showall',[App\Http\Controllers\BookController::class, 'showall'])->name("show_all");
+
 

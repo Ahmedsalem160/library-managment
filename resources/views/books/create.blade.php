@@ -5,39 +5,47 @@
             <h3 style="font-size: 14px; line-height: 20px; height: 20px; margin: 0">Add Books</h3>
         </div>
     <div class="container" style="padding: 15px">
-                <form form-horizontal row-fluid>
+                <form method="post" action="{{ route('books.store') }}" form-horizontal row-fluid>
+                    @csrf
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Title Of Book</label>
                         <div class="col-sm-10">
-                            <input type="text" placeholder="Enter the title of the book here..." class="form-control">
+                            <input type="text" name="name" placeholder="Enter the title of the book here..." class="form-control">
                         </div>
                     </div>
                     <hr>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Author Name</label>
                         <div class="col-sm-10">
-                            <input type="text" placeholder="Enter the name of author for the book here..." class="form-control">
+                            <input type="text" name="author" placeholder="Enter the name of author for the book here..." class="form-control">
                         </div>
                     </div>
                     <hr>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Category Name'</label>
                         <div class="col-sm-10">
-                            <input type="text" placeholder="Enter the name of Category for the book here..." class="form-control">
+                            <input type="text" name="category" placeholder="Enter the name of Category for the book here..." class="form-control">
                         </div>
                     </div>
                     <hr>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label" for="basicinput">Description of Book</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" rows="4" placeholder="Enter few lines about the book here"></textarea>
+                            <textarea class="form-control" name="description" rows="4" placeholder="Enter few lines about the book here"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Add the book cover</label>
+                        <div class="col-sm-10">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
                         </div>
                     </div>
                     <hr>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Add the book file</label>
                         <div class="col-sm-10">
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
                         </div>
                     </div>
                     <hr>
