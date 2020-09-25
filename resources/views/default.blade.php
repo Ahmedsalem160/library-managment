@@ -40,7 +40,7 @@
         </div>
     </div>
     <!-- Preloader Start -->
-    @include('nav')
+    {{--@include('nav')--}}
 
 
     @yield('content')
