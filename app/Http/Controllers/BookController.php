@@ -46,6 +46,28 @@ class BookController extends Controller
         $book->name=$request->name;
         $book->author=$request->author;
         $book->description=$request->description;
+        if($request->hasFile('book_img')){
+            $file = $request->file('book_img');
+            $extension =$file->getClientOriginalExtension();
+            $filename= time() . '.' . $extension;
+            $file->move('uploads' , $filename);
+            $book->book_img =$filename;
+        }else {
+            return $request;
+            $book->book_img = "";
+        }
+        if($request->hasFile('book_file')){
+            $file = $request->file('book_file');
+            $extension =$file->getClientOriginalExtension();
+            $filename= time() . '.' . $extension;
+            $file->move('uploads' , $filename);
+            $book->book_file =$filename;
+        }else {
+            return $request;
+            $book->book_file = "";
+        }
+        //$request->file('book_img');
+        //echo $request->file('book_img')->store('upload');
         $book->save();
         return redirect()->route('books.index');
     }

@@ -18,10 +18,10 @@ class CreateBooksTable extends Migration
             $table->text('name');
             $table->text('author');
             $table->text('description');
-
+            $table->text('book_img');
+            $table->text('book_file');
             $table->bigInteger('borrowed')->unsigned();
             $table->foreign('borrowed')->references('id')->on('users');
-
             //$table->unsignedBigInteger('user_id');
             //$table->unsignedBigInteger('roof_id');
             //$table->foreign('roof_id')->references('id')->on('roofs');

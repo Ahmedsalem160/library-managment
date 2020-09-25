@@ -4,7 +4,7 @@
             @foreach ($books as $book)
             <div class="col-lg-4" style="margin-bottom: 15px">
             <div class="card border-info mb-3">
-                <img class="card-img-top" src="http://via.placeholder.com/259x180" alt="Card image cap">
+                <img style="margin: auto; padding: 15px 0" src="{{asset('uploads/'.$book->book_img)}}" width="300px" height="380px">
                 <div class="card-body text-info">
                     <h5 class="card-title">Book Name : <span style="font-size: 20px">{{$book->name}}</span></h5>
                     <h5 class="card-title">Book Author : <span style="font-size: 20px">{{$book->author}}</span></h5>

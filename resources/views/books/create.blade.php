@@ -5,7 +5,7 @@
             <h3 style="font-size: 14px; line-height: 20px; height: 20px; margin: 0">Add Books</h3>
         </div>
     <div class="container" style="padding: 15px">
-                <form method="post" action="{{ route('books.store') }}" form-horizontal row-fluid>
+                <form method="post" action="{{ route('books.store') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Title Of Book</label>
@@ -38,14 +38,14 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Add the book cover</label>
                         <div class="col-sm-10">
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="book_img">
                         </div>
                     </div>
                     <hr>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Add the book file</label>
                         <div class="col-sm-10">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="book_file">
                         </div>
                     </div>
                     <hr>

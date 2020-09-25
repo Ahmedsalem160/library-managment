@@ -21,15 +21,219 @@
   <component name="ChangeListManager">
     <list default="true" id="5602a311-f8bd-4488-a542-077c9e097cbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_20_230002_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_230002_create_books_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/animated-headline.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/fontawesome-all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/gijgo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/hamburgers.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/price_rangs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/progressbar_barfiller.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/slicknav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/style.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/css/themify-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/Flaticon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/Flaticon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/Flaticon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/Flaticon.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/_flaticon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/flaticon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/gijgo-material.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/gijgo-material.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/gijgo-material.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/gijgo-material.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/themify.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/themify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/themify.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/fonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/comment_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/comment_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/comment_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/learn_about_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/single_blog_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/single_blog_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/single_blog_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/single_blog_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/single_blog_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/blog/slide_thumb_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/disabled-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/disabled-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/f3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/f5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/f6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/f7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/f8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/g1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/g2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/g3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/g4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/g5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/g6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/g7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/g8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/primary-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/primary-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/success-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/elements/success-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/about2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/about3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/featured1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/featured2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/featured3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/featured4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/featured5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/featured6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/footer-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/footer_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/form.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/h1_hero2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/heart1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/logo2_footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/qutaion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/section-bg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/section_bg01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/section_bg02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/tam4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/team1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/team2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/team3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/team4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/testimonail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/testimonial.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/topic1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/topic2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/topic3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/topic4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/topic5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/topic6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/topic7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/topic8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/gallery/video-bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/hero/h1_hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/hero/hero2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/hero/screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/icon/about.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/icon/icon1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/icon/icon2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/icon/icon3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/icon/right-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/login-bg.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/logo/loder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/logo/loder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/logo/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/logo/logo2_footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/post_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/img/post/preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/animated.headline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/gijgo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/hover-direction-snake.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.ajaxchimp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.barfiller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.countdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.counterup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.magnific-popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.nice-select.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.paroller.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.slicknav.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/jquery.vide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/mail-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/one-page-nav-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/price-range.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/vendor/jquery-1.12.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/vendor/modernizr-3.5.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_blog_page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_bradcam.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_collaps.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_color.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_contact_form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_courses.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_elements.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_extend.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_h1-hero.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_headerMenu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_load-balnceing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_overlay.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_services.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_services_section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_team.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_testimonial.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_top-sub.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/_wantTowork.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/scss/style.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/books/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/books/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/default.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/books/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/books/showall.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/showall.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/students/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/students/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +400,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600901549644</updated>
-      <workItem from="1600901553325" duration="39797000" />
+      <workItem from="1600901553325" duration="53118000" />
     </task>
     <servers />
   </component>
@@ -219,6 +423,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600977609241" />
+    <state x="730" y="190" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601045100168">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="730" y="190" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601045100168" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1601033533489">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601033533489" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600983576436">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
