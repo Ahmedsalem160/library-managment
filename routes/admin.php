@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,6 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
 //prefix  admin
 
 Route::group(['middleware'=>'guest:admin'],function (){
@@ -22,11 +21,19 @@ Route::group(['middleware'=>'guest:admin'],function (){
     Route::post('/login',[AdminController::class,'logged'])->name('admin.login');
 });
 
+
+
 Route::group(['middleware'=>'auth:admin'],function (){
-    Route::get('default',[AdminController::class,'dash'])->name('dash');
-    Route::get('/',function (){
-        return "Admin logined";
-    });
+    Route::get('dashboard',[AdminController::class,'dash'])->name('dash');
+    //Book >>CRUD
+    Route::get('books',[DashboardController::class,'allBooks'])->name('allBooks');
+    Route::get('create/book',[DashboardController::class,'create'])->name('create.book');
+    Route::post('create/book',[DashboardController::class,'addBook'])->name('store.book');
+    Route::get('edit/book',[DashboardController::class,'editBook'])->name('edit.book');
+    Route::post('edit/book/{id}',[DashboardController::class,'updateBook'])->name('update.book');
+    Route::post('delete/book/{id}',[DashboardController::class,'destroyBook'])->name('books.destroy');
+
+
 });
 
 

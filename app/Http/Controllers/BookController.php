@@ -15,13 +15,12 @@ class BookController extends Controller
 
     public function __construct()
     {
-        return $this->middleware('auth');
+        return $this->middleware('auth:admin');
     }
 
     public function index()
     {
         $books = book::all();
-        //dd($books);
         return view("books.list", ["books" => $books]);
     }
 
@@ -99,7 +98,6 @@ class BookController extends Controller
     public function edit($id)
     {
         $book = book::find($id);
-        //return ('welcom');
         return view("books.edit", ['book' => $book]);
     }
 
@@ -137,7 +135,6 @@ class BookController extends Controller
     public function showall()
     {
         $books = Book::all();
-
         return view("books.showall",["books"=>$books]);
     }
 }

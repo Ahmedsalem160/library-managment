@@ -12,23 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-<<<<<<< HEAD
-Route::view('/index','index')->name('index');
-||||||| 5bb20e6
 
 
-Route::view('/index','index');
-
-
-=======
-
-
-Route::view('/index','index')->name('index');
+Route::view('/loginAdmin','admin.auth.login');
 
 
 
 
->>>>>>> master
+//Hany
 Route::get('/', function () {
     return view('welcome');
 });
@@ -40,11 +31,13 @@ Route::get('registerStudent', function () {
     return view('students.register');
 })->name('registerStudent');
 
+
+//default
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-//////
+//Hany
 Route::resource('books', App\Http\Controllers\BookController::class);
 Route::get('books.showall',[App\Http\Controllers\BookController::class, 'showall'])->name("show_all");
 

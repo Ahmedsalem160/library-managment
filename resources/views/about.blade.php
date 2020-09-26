@@ -1,4 +1,4 @@
-@extends('default')
+@extends('admin.dashboard.default')
 
 @section('content')
 
@@ -17,14 +17,14 @@
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                            <li class="breadcrumb-item"><a href="#">about</a></li> 
+                                            <li class="breadcrumb-item"><a href="#">about</a></li>
                                         </ol>
                                     </nav>
                                     <!-- breadcrumb End -->
                                 </div>
                             </div>
                         </div>
-                    </div>          
+                    </div>
                 </div>
             </div>
         </section>
@@ -78,8 +78,8 @@
                     <div class="section-tittle section-tittle2 mb-55">
                         <div class="front-text">
                             <h2 class="">Learn new skills online with top educators</h2>
-                            <p>The automated process all your website tasks. Discover tools and 
-                                techniques to engage effectively with vulnerable children and young 
+                            <p>The automated process all your website tasks. Discover tools and
+                                techniques to engage effectively with vulnerable children and young
                             people.</p>
                         </div>
                     </div>
