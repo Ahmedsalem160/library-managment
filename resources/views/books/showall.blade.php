@@ -11,7 +11,8 @@
                     <p class="card-text"><h5 style="margin:0;">Description:</h5>{{$book->description}}</p>
                 </div>
                 <div class="card-footer card-footer bg-transparent border-info">
-                    <small class="text-muted">Created at : {{$book->created_at}}</small>
+                    <a style="width: 45%;" class="btn btn-success" href="{{asset('uploads/'.$book->book_file)}}" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+                    <a style="width: 45%;" class="btn btn-primary" href="{{asset('uploads/'.$book->book_file)}}" onclick="window.open('{{asset('uploads/'.$book->book_file)}}', '_self', 'fullscreen=yes'); return false;"><i class="fas fa-book-open"></i> Open Book</a>
                 </div>
             </div>
                 </div>

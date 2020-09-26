@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Book;
+use File;
 
 class BookController extends Controller
 {
@@ -125,7 +126,10 @@ class BookController extends Controller
      */
     public function destroy($id)
     {
-        book::find($id)->delete();
+        $book= book::find($id);
+        File::delete('uploads/'.$book->book_img);
+        $book->delete();
+        //File::delete('uploads/'.$book->book_img);
         return redirect()->route('books.index');
     }
     public function showall()

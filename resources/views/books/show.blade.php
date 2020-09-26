@@ -19,9 +19,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <iframe src="{{asset('uploads/'.$book->book_file)}}" style="width:400px; height:430px;" frameborder="0"></iframe>
+            <div class="col-5 d-none d-lg-block" >
+                <div class="col-lg-12">
+                    <embed id="file-book" src="{{asset('uploads/'.$book->book_file)}}" style="width:400px; height:388px;" frameborder="0">
+                </div>
+                <div class="col-lg-12 flex">
+                    <a style="width: 200px; margin-bottom: 5px" class="btn btn-success" href="{{asset('uploads/'.$book->book_file)}}" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+                    <a style="width: 180px; margin-bottom: 5px" class="btn btn-primary" href="{{asset('uploads/'.$book->book_file)}}" onclick="window.open('{{asset('uploads/'.$book->book_file)}}', '_self', 'fullscreen=yes'); return false;"><i class="fas fa-book-open"></i> Open Full Screen</a>
+                </div>
             </div>
+        </div>
+        <div class="col-xl-12 d-lg-none d-md-block" >
+            <a style="width: 45%;" class="btn btn-success" href="{{asset('uploads/'.$book->book_file)}}" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+            <a style="width: 45%;" class="btn btn-primary" href="{{asset('uploads/'.$book->book_file)}}" onclick="window.open('{{asset('uploads/'.$book->book_file)}}', '_self', 'fullscreen=yes'); return false;"><i class="fas fa-book-open"></i> Open Full Screen</a>
         </div>
 
     </div>
