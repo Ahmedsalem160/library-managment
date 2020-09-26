@@ -23,9 +23,12 @@ Route::get('loginStudent', function () {
 Route::get('registerStudent', function () {
     return view('students.register');
 })->name('registerStudent');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+//////
 Route::resource('books', App\Http\Controllers\BookController::class);
 Route::get('books.showall',[App\Http\Controllers\BookController::class, 'showall'])->name("show_all");
 
