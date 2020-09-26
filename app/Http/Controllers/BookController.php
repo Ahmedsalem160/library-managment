@@ -61,7 +61,7 @@ class BookController extends Controller
             $file = $request->file('book_file');
             $extension =$file->getClientOriginalExtension();
             $filename= time() . '.' . $extension;
-            $file->move('uploads' , $filename);
+            $file->move('upload' , $filename);
             $book->book_file =$filename;
         }else {
             return $request;
@@ -128,6 +128,7 @@ class BookController extends Controller
     {
         $book= book::find($id);
         File::delete('uploads/'.$book->book_img);
+        File::delete('upload/'.$book->book_file);
         $book->delete();
         //File::delete('uploads/'.$book->book_img);
         return redirect()->route('books.index');

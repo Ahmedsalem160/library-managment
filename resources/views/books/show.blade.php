@@ -21,7 +21,7 @@
             </div>
             <div class="col-5 d-none d-lg-block" >
                 <div class="col-lg-12">
-                    <embed id="file-book" src="{{asset('uploads/'.$book->book_file)}}" style="width:400px; height:388px;" frameborder="0">
+                    <embed id="file-book" src="{{asset('upload/'.$book->book_file)}}" style="width:400px; height:388px;" frameborder="0">
                 </div>
                 <div class="col-lg-12 flex">
                     <a style="width: 200px; margin-bottom: 5px" class="btn btn-success" href="{{asset('uploads/'.$book->book_file)}}" download><i class="fa fa-download" aria-hidden="true"></i> Download</a>
