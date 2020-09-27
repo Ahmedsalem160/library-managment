@@ -41,12 +41,9 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Add the book cover</label>
                 <div class="col-sm-10">
-                    <input type="file" name="book_img" class="form-control-file" id="img" name="book_img" value="{{asset('upload_img/'.$book->book_img)}}" style="display:none;"><input type="submit" value="Update Img"  for="img"> <label>{{$book->book_img}}</label>
+                    <input type="file" name="book_img" class="form-control-file" id="img" name="book_img" value="{{asset('upload_img/'.$book->book_img)}}">
                 </div>
             </div>
-            @error('book_img')
-            <div class="alert alert-danger">{{ $message }}</div>
-            @enderror
             <hr>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label"></label>
