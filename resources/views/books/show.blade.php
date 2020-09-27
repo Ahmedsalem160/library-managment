@@ -1,4 +1,4 @@
-@extends('default')
+@extends('admin.dashboard.default')
 @section('content')
     <div class="container-fluid" style="margin-top: 5vh">
         <div class="row">
