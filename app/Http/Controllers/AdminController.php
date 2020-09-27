@@ -6,6 +6,7 @@ use App\Http\Requests\LoginAdmin;
 use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
@@ -31,13 +32,24 @@ class AdminController extends Controller
         $this->validate($request,['current'=>'required',
             'new'=>'required|min:8',
             'confirmNew'=>'required|min:8']);
-        if ($request->new == $request->confirmNew){//
-            $admin=Admin::find($request->current);
-            $admin->password=Hash::make($request->new);
-            $admin->save();
+
+        $check_pwd=Auth::user()->email;
+
+        $admin = DB::table('admins')->where('email', $check_pwd)->first();
+
+        $current_pwd=$request->current;
+
+        if (Hash::check($current_pwd,$admin->password)){
+            $newPassword= bcrypt($request->new);
+            //$admin->password=$newPassword;
+            DB::table('admins')->where('email', $check_pwd)->update(['password'=>$newPassword]);
+            //$admin->save();
             return redirect()->route('adminLogin');
+        }else{
+            //echo "false";die;
+            return redirect()->back();
         }
-        return "new Password doesn't match with other";
+
     }
 
     public function dash(){

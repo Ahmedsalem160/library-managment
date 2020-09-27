@@ -14,38 +14,52 @@
 <ul class="navbar-nav ml-auto ml-md-0">
     <li class="nav-item dropdown">
 
-
-    @guest
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-        </li>
-        @if (Route::has('register'))
+        @guest
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
             </li>
-        @endif
-    @else
-        <li class="nav-item dropdown">
+            @if (Route::has('register'))
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                </li>
+            @endif
+        @else
+            <li class="nav-item dropdown">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    {{--{{ Auth::Admin()->fname }}--}} <i class="fas fa-user fa-fw"></i>
+                    {{--<span class="caret"></span>--}}
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+
+                    <a  class="dropdown-item" href="{{ route('resetPassword') }}">ResetPassword</a>
+                </div>
+
+            </li>
+        {{--<li class="nav-item dropdown">     Reset Password
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{--{{ Auth::Admin()->fname }}--}} <i class="fas fa-user fa-fw"></i>
-                {{--<span class="caret"></span>--}}
+                csc
             </a>
 
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('logout') }}"
-                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                </a>
-
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
+                <a  class="dropdown-item" href="{{ route('resetPassword') }}">ResetPassword</a>
             </div>
-        </li>
+
+        </li>--}}
+
         @endguest
 
-    </li>
+    
 </ul>
 </nav>
 {{--    Laravel 7

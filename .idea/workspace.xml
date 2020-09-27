@@ -22,17 +22,7 @@
     <list default="true" id="5602a311-f8bd-4488-a542-077c9e097cbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Traits/BookTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/BookTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_20_171651_create_categories_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_20_171717_create_roofs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_20_230002_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_230002_create_books_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/default.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/books/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/books/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/books/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/nav.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,6 +214,8 @@
       <workItem from="1601141847336" duration="8912000" />
       <workItem from="1601153244890" duration="2915000" />
       <workItem from="1601162515339" duration="6374000" />
+      <workItem from="1601171812746" duration="944000" />
+      <workItem from="1601215453649" duration="4571000" />
     </task>
     <servers />
   </component>
@@ -267,5 +259,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600983576436" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Admin.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
