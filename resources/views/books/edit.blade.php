@@ -32,14 +32,14 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="basicinput">Description of Book</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control" name="description" value="{{$book->description}}" rows="4" placeholder="Enter few lines about the book here"></textarea>
+                    <textarea class="form-control" name="description" rows="4" placeholder="Enter few lines about the book here">{{$book->description}}</textarea>
                 </div>
             </div>
             <hr>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Add the book cover</label>
                 <div class="col-sm-10">
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="book_img">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="book_img" value="{{asset('upload_img/'.$book->book_img)}}">
                 </div>
             </div>
             <hr>

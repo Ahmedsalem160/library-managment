@@ -20,7 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5602a311-f8bd-4488-a542-077c9e097cbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/library-managment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/1601125205.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/1601126269.jpg5f6f3f7dd318f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/1601126365.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/1601125205.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/16011258605f6f3de438b1f-1601125860.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/16011260775f6f3ebdaacd2-1601126077.jpg-laptop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/1601126269.jpg5f6f3f7dd23b3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/1601126365.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/books/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/books/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/books/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/books/showall.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/showall.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/default.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +183,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -174,6 +192,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\library-managment\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\library-managment\resources\views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -193,7 +219,8 @@
       <workItem from="1601069063598" duration="24390000" />
       <workItem from="1601118600719" duration="989000" />
       <workItem from="1601119678347" duration="973000" />
-      <workItem from="1601122492586" duration="3978000" />
+      <workItem from="1601122492586" duration="30353000" />
+      <workItem from="1601201813831" duration="9377000" />
     </task>
     <servers />
   </component>
@@ -221,6 +248,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="730" y="190" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601115694051" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601206923354">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601206923354" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1601120649320">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -229,9 +260,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601065674140" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600983576436">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601152582027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600983576436" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601152582027" />
   </component>
 </project>

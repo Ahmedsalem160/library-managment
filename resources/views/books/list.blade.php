@@ -18,7 +18,7 @@
         @foreach ($books as $book)
         <tr>
             <th scope="row">{{$book->id}}</th>
-            <td><img src="{{asset('uploads/'.$book->book_img)}}" width="70px" height="70px"></td>
+            <td><img src="{{asset('upload_img/'.$book->book_img)}}" width="70px" height="70px"></td>
             <td>{{$book->name}}</td>
             <td>{{$book->author}}</td>
             <td>{{$book->description}}</td>
