@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Book;
-<<<<<<< HEAD
+use App\Http\Requests\StoreBook;
 use File;
-=======
+
 use App\Traits\BookTrait;
->>>>>>> a016873fb0c44f7bd30b704b6534db5bf609383a
+
 
 class BookController extends Controller
 {
@@ -46,45 +46,23 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreBook $request)
     {
 
         $book= new Book();
         $book->borrowed=null;
-        $book->roof_id=null;
-        $book->category_id=null;
         $book->name=$request->name;
         $book->author=$request->author;
         $book->description=$request->description;
-<<<<<<< HEAD
-        if($request->hasFile('book_img')){
-            $file = $request->file('book_img');
-            $extension =$file->getClientOriginalExtension();
-            $filename= "image".time() . '.' . $extension;
-            $file->move('upload_img/' , $filename );
-            $book->book_img =$filename;
-        }else {
-            return $request;
-            $book->book_img = "";
-        }
-        if($request->hasFile('book_file')){
-            $file = $request->file('book_file');
-            $extension =$file->getClientOriginalExtension();
-            $filename= "file".time() . '.' . $extension;
-            $file->move('upload_file/' , $filename );
-            $book->book_file =$filename;
-        }else {
-            return $request;
-            $book->book_file = "";
-        }
+
         //$request->file('book_img');
         //echo $request->file('book_img')->store('upload');
-=======
+
         $img=$request->book_img;
         $filePdf=$request->book_file;
-        $book->book_img=$this->SaveFile($img,'uploads');
-        $book->book_file=$this->SaveFile($filePdf,'uploads');
->>>>>>> m2
+        $book->book_img=$this->SaveFile($img,'upload_img');
+        $book->book_file=$this->SaveFile($filePdf,'upload_file');
+
         $book->save();
         return redirect()->route('books.index');
     }
@@ -120,12 +98,10 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StoreBook $request, $id)
     {
         $book = book::findOrFail($id);
         $book->borrowed=null;
-        $book->roof_id=null;
-        $book->category_id=null;
         $book->name=$request->name;
         $book->author=$request->author;
         $book->description=$request->description;
@@ -152,25 +128,22 @@ class BookController extends Controller
      */
     public function destroy($id)
     {
-<<<<<<< HEAD
-        $book= book::find($id);
+
+        $book= book::findOrFail($id);
         File::delete('upload_img/'.$book->book_img);
         File::delete('upload_file/'.$book->book_file);
         $book->delete();
         //File::delete('uploads/'.$book->book_img);
-=======
-        book::findOrFail($id)->delete();
->>>>>>> a016873fb0c44f7bd30b704b6534db5bf609383a
+
         return redirect()->route('books.index');
     }
     public function showAll()
     {
         $books = Book::all();
-<<<<<<< HEAD
+
 
         return view("books.showAll",["books"=>$books]);
-=======
-        return view("books.showall",compact('books'));
->>>>>>> m2
+
+
     }
 }

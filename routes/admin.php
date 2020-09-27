@@ -37,7 +37,7 @@ Route::group(['middleware'=>'auth:admin'],function (){
     Route::post('edit/book/{id}',[DashboardController::class,'updateBook'])->name('update.book');
     Route::post('delete/book/{id}',[DashboardController::class,'destroyBook'])->name('books.destroy');*/
 
-    Route::resource('books', BookController::class);
+    //Route::resource('books', BookController::class);
 });
 
 

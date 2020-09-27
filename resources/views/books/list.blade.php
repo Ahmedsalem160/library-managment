@@ -5,7 +5,7 @@
     <thead class=" thead-light">
         <tr>
             <th scope="col">#book</th>
-            <th scope="col">#book Cover</th>
+            <th scope="col">Book Cover</th>
             <th scope="col">Book Name</th>
             <th scope="col">Author Name</th>
             <th scope="col">Description</th>

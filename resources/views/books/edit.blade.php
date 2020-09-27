@@ -14,6 +14,9 @@
                     <input type="text" name="name" value="{{$book->name}}" placeholder="Enter the title of the book here..." class="form-control">
                 </div>
             </div>
+            @error('name')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
             <hr>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Author Name</label>
@@ -21,13 +24,9 @@
                     <input type="text" name="author" value="{{$book->author}}" placeholder="Enter the name of author for the book here..." class="form-control">
                 </div>
             </div>
-            <hr>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Category Name'</label>
-                <div class="col-sm-10">
-                    <input type="text" placeholder="Enter the name of Category for the book here..." class="form-control">
-                </div>
-            </div>
+            @error('author')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
             <hr>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="basicinput">Description of Book</label>
@@ -35,13 +34,19 @@
                     <textarea class="form-control" name="description" rows="4" placeholder="Enter few lines about the book here">{{$book->description}}</textarea>
                 </div>
             </div>
+            @error('description')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
             <hr>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Add the book cover</label>
                 <div class="col-sm-10">
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="book_img" value="{{asset('upload_img/'.$book->book_img)}}">
+                    <input type="file" name="book_img" class="form-control-file" id="img" name="book_img" value="{{asset('upload_img/'.$book->book_img)}}" style="display:none;"><input type="submit" value="Update Img"  for="img"> <label>{{$book->book_img}}</label>
                 </div>
             </div>
+            @error('book_img')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
             <hr>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label"></label>
