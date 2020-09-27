@@ -25,7 +25,7 @@
             <td><a href="{{route("books.show",$book->id)}}" class="btn btn-info btn-simple btn-xs" style='color:#fff; text-decoration: none;'><i class="fa fa-eye" aria-hidden="true" style="color: #212c69"></i></a></td>
             <td><a href="{{route("books.edit",$book->id)}}" class="btn btn-success btn-simple btn-xs" style='color:#fff; text-decoration: none;'><i class="fa fa-edit"></i></a></td>
             <td>
-                <form action="{{route("books.delete",$book->id)}}" method="post">
+                <form action="{{route("books.destroy",$book->id)}}" method="post">
                     @csrf
                     <input type="hidden" name="_method" value="delete">
                     <button type="submit" class="btn btn-danger btn-simple btn-xs">

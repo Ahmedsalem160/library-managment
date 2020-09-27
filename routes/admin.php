@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,7 @@ use App\Http\Controllers\DashboardController;
 //prefix  admin
 
 Route::group(['middleware'=>'guest:admin'],function (){
-    Route::get('/login',[AdminController::class,'login']);
+    Route::get('/login',[AdminController::class,'login'])->name('adminLogin');
     Route::post('/login',[AdminController::class,'logged'])->name('admin.login');
 });
 
@@ -25,15 +26,18 @@ Route::group(['middleware'=>'guest:admin'],function (){
 
 Route::group(['middleware'=>'auth:admin'],function (){
     Route::get('dashboard',[AdminController::class,'dash'])->name('dash');
+    Route::get('/reset-password',[AdminController::class,'resetPassword'])->name('resetPassword');
+    Route::post('/reset-password',[AdminController::class,'reset'])->name('reset');
     //Book >>CRUD
-    Route::get('books',[DashboardController::class,'allBooks'])->name('allBooks');
+
+   /* Route::get('books',[DashboardController::class,'allBooks'])->name('allBooks');
     Route::get('create/book',[DashboardController::class,'create'])->name('create.book');
     Route::post('create/book',[DashboardController::class,'addBook'])->name('store.book');
     Route::get('edit/book',[DashboardController::class,'editBook'])->name('edit.book');
     Route::post('edit/book/{id}',[DashboardController::class,'updateBook'])->name('update.book');
-    Route::post('delete/book/{id}',[DashboardController::class,'destroyBook'])->name('books.destroy');
+    Route::post('delete/book/{id}',[DashboardController::class,'destroyBook'])->name('books.destroy');*/
 
-
+    Route::resource('books', BookController::class);
 });
 
 

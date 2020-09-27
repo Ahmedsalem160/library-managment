@@ -5,7 +5,7 @@
         <h3 style="font-size: 14px; line-height: 20px; height: 20px; margin: 0">Edit Books</h3>
     </div>
     <div class="container" style="padding: 15px">
-        <form method="post" action="{{ route('update.book',$book->id) }}" form-horizontal row-fluid>
+        <form method="post" action="{{ route('books.update',$book->id) }}" form-horizontal row-fluid>
             @csrf
             <input name="_method" type="hidden" value="PUT">
             <div class="form-group row">

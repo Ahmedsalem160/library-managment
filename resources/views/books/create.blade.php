@@ -5,7 +5,7 @@
             <h3 style="font-size: 14px; line-height: 20px; height: 20px; margin: 0">Add Books</h3>
         </div>
     <div class="container" style="padding: 15px">
-                <form method="post" action="{{ route('store.book') }}" enctype="multipart/form-data">
+                <form method="post" action="{{ route('books.store') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Title Of Book</label>

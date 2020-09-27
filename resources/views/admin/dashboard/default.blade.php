@@ -27,7 +27,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-user-cog"></i></div>
                         Book Controller
                     </a>
-                    <a class="nav-link" href="{{route('allBooks')}}">
+                    <a class="nav-link" href="{{route('books.index')}}">
                         <div class="sb-nav-link-icon"><i class="fas fa-user-cog"></i></div>
                         All Books
                     </a>

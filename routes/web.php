@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::view('/loginAdmin','admin.auth.login');
+//Route::view('/reset','admin.auth.resetPassword');
 
 
 
@@ -38,7 +38,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 //Hany
-Route::resource('books', App\Http\Controllers\BookController::class);
+
 Route::get('books.showall',[App\Http\Controllers\BookController::class, 'showall'])->name("show_all");
 
 

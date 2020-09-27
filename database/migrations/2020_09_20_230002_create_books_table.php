@@ -22,14 +22,6 @@ class CreateBooksTable extends Migration
             $table->text('book_file');
             $table->bigInteger('borrowed')->unsigned();
             $table->foreign('borrowed')->references('id')->on('users');
-            //$table->unsignedBigInteger('user_id');
-            //$table->unsignedBigInteger('roof_id');
-            //$table->foreign('roof_id')->references('id')->on('roofs');
-            $table->foreignId('roof_id')->constrained('roofs');
-            //$table->foreignId('user_id')->constrained();
-            $table->bigInteger('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('categories');
-
             $table->timestamps();
         });
     }
