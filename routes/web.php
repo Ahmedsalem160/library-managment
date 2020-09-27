@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,31 +15,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-//Route::view('/reset','admin.auth.resetPassword');
+Route::get('/index',[StudentController::class, 'index'])->name("show_all");
+
+Route::get('book/{id}',[StudentController::class,'showDetail'])->name('bookDetail');
 
 
 
 
-//Hany
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('loginStudent', function () {
-    return view('students.login');
-})->name('loginStudent');
 
-Route::get('registerStudent', function () {
-    return view('students.register');
-})->name('registerStudent');
+
+
+
 
 
 //default
+Route::get('/', function () {
+    return view('welcome');
+});
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-//Hany
 
-Route::get('books.showall',[App\Http\Controllers\BookController::class, 'showall'])->name("show_all");
+
+
 
 

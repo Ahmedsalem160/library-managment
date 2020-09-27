@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginAdmin;
 use App\Models\Admin;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -54,5 +55,10 @@ class AdminController extends Controller
 
     public function dash(){
         return view('admin.dashboard.index');
+    }
+    // see students
+    public function getstudents(){
+        $students=User::all();
+        return view('students');
     }
 }

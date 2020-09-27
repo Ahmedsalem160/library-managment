@@ -59,7 +59,7 @@
 
         @endguest
 
-    
+
 </ul>
 </nav>
 {{--    Laravel 7
