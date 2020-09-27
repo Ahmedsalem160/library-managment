@@ -1,4 +1,4 @@
-@extends('default')
+@extends('admin.dashboard.default')
 @section('content')
 <div class="content" style="box-shadow: 0 0 3px rgba(0,0,0,0.1); border-color: #e9e9e9; margin-bottom: 20px; background-color: #ffffff; border-radius: 4px; -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05); box-shadow: 0 1px 1px rgba(0,0,0,.05);">
     <div class="header" style="color: #767676; background-color: #f6f6f6; border-color: #e9e9e9; padding: 10px 15px; border-bottom: 1px solid transparent; border-top-right-radius: 3px; border-top-left-radius: 3px;">

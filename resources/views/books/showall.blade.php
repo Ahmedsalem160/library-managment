@@ -1,4 +1,4 @@
-@extends('default')
+@extends('admin.dashboard.default')
 @section('content')
     <div class="card-group"  style="margin-top: 15px">
             @foreach ($books as $book)

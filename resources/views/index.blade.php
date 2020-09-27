@@ -1,4 +1,4 @@
-@extends('default')
+@extends('admin.dashboard.default')
 @section('content')
     <main>
         <div class="container-fluid">
