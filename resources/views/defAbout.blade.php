@@ -15,7 +15,7 @@
 <body class="sb-nav-fixed">
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <a class="navbar-brand" href="{{asset('index')}}">Library Management</a>
-    
+
 
     <!-- Navbar-->
     <ul class="navbar-nav ml-auto ml-md-0">
