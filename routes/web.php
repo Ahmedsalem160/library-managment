@@ -33,8 +33,10 @@ Route::group(['middleware'=>'auth:web'],function (){
     Route::get('borrow/{id}',[StudentController::class,'borrow'])->name('borrowIT');
 
 
-    Route::get('back/book/{$id}',[StudentController::class,'backToShelf'])->name('back');
+    Route::get('back/book/{id}',[StudentController::class,'backToShelf'])->name('back');
 });
+
+
 
 Route::get('/', function () {
     return view('about');

@@ -15,7 +15,7 @@
                 <th scope="row">{{$student->id}}</th>
                 <td>{{$student->name}}</td>
                 <td>{{$student->email}}</td>
-                <td><a href="#" class="btn btn-info btn-simple btn-xs" style='color:#fff; text-decoration: none;'><i class="fa fa-info-circle" aria-hidden="true" style="color: #212c69"></i> borrowed books</a></td>
+                <td><a href="{{route('books-of-student',$student->id)}}" class="btn btn-info btn-simple btn-xs" style='color:#fff; text-decoration: none;'><i class="fa fa-info-circle" aria-hidden="true" style="color: #212c69"></i> borrowed books</a></td>
             </tr>
         @endforeach
         </tbody>

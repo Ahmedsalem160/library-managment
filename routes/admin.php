@@ -33,23 +33,14 @@ Route::group(['middleware'=>'auth:admin'],function (){
     Route::post('/reset-password',[AdminController::class,'reset'])->name('reset');
     //Book >>CRUD
 
-   /* Route::get('books',[DashboardController::class,'allBooks'])->name('allBooks');
-    Route::get('create/book',[DashboardController::class,'create'])->name('create.book');
-    Route::post('create/book',[DashboardController::class,'addBook'])->name('store.book');
-    Route::get('edit/book',[DashboardController::class,'editBook'])->name('edit.book');
-    Route::post('edit/book/{id}',[DashboardController::class,'updateBook'])->name('update.book');
-    Route::post('delete/book/{id}',[DashboardController::class,'destroyBook'])->name('books.destroy');*/
-
     Route::resource('books', BookController::class);
 
     Route::get('showAll',[BookController::class, 'showAll'])->name("show_all");
-    //Route::get('showAllBook',[App\Http\Controllers\StdBookController::class, 'showAll'])->name("show_book");
+
     Route::get('AllStudent',[DashboardController::class, 'AllStudent'])->name("show_student");
+    Route::get('books-of-student/{id}',[DashboardController::class, 'BooksOfStudent'])->name("books-of-student");
+
 });
 
-
-
-
-//Route::view('test','index')->middleware('auth:admin');
 
 

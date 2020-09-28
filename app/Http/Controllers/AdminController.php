@@ -54,7 +54,7 @@ class AdminController extends Controller
     }
 
     public function dash(){
-        return view('admin.dashboard.index');
+        return view('admin.dashboard.books');
     }
     // see students
     public function getstudents(){

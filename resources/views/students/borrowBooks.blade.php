@@ -25,7 +25,13 @@
                                     <div class="card-footer card-footer bg-transparent border-info">
                                         <td><a href="{{route("bookDetail",$book->id)}}" class="btn btn-info btn-simple btn-xs" style='color:#fff; text-decoration: none;'><i class="fa fa-eye" aria-hidden="true" style="color: #212c69"></i>&nbsp;Show Detail</a></td>
 
-                                        <td><a href="{{route("back",$book->id)}}" class="btn btn-danger btn-simple btn-xs" style='color:#fff; text-decoration: none;'>Back To the Shelf</a></td>
+                                        <td>
+                                            <form action="{{route("back",$book->id)}}" method="GET" style="display:inline;">
+
+                                                <input type="submit" value="Back To the Shelf" class="btn btn-danger btn-simple btn-xs"/>
+                                            </form>
+                                            {{--<a href="{{route("back",$book->id)}}" class="btn btn-danger btn-simple btn-xs" style='color:#fff; text-decoration: none;'>Back To the Shelf</a>--}}
+                                        </td>
                                     </div>
                                 </div>
                             </div>
