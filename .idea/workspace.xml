@@ -21,19 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5602a311-f8bd-4488-a542-077c9e097cbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/default.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/signin-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/signup-image.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/register.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/books/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/books/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/books/showall.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/showall.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +169,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/students" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -191,9 +181,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\salem160\ITI\library\resources\views" />
       <recent name="C:\Users\salem160\ITI\library\resources\views\students" />
       <recent name="C:\Users\salem160\ITI\library\resources\views\admin\dashboard" />
-      <recent name="C:\Users\salem160\ITI\library\resources\views" />
       <recent name="C:\Users\salem160\ITI\library\public\css" />
       <recent name="C:\Users\salem160\ITI\library\public\fonts" />
     </key>
@@ -228,7 +218,7 @@
       <workItem from="1601162515339" duration="6374000" />
       <workItem from="1601171812746" duration="944000" />
       <workItem from="1601215453649" duration="18655000" />
-      <workItem from="1601240867336" duration="18035000" />
+      <workItem from="1601240867336" duration="19418000" />
     </task>
     <servers />
   </component>
