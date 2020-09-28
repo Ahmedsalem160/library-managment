@@ -22,11 +22,7 @@ class StudentController extends Controller
 
     public function borrow($id){
         $user_id=Auth::id();
-        //$book=Book::find($id);
-        //$book->borrowed=$user_id;
         DB::table('books')->where('id', $id)->update(['borrowed'=>$user_id]);
-        //$book->save();
-        //dd($id);
         return  redirect()->route('bookDetail',$id);
     }
     public  function borrowBooks(){

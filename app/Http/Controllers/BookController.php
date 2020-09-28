@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BookRequest;
 use Illuminate\Http\Request;
 use App\Models\Book;
 use App\Traits\BookTrait;
-
+use File;
 class BookController extends Controller
 {
     use BookTrait;
@@ -42,13 +43,11 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BookRequest $request)
     {
 
         $book= new Book();
         $book->borrowed=null;
-        $book->roof_id=null;
-        $book->category_id=null;
         $book->name=$request->name;
         $book->author=$request->author;
         $book->description=$request->description;
@@ -91,15 +90,24 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BookRequest $request, $id)
     {
         $book = book::findOrFail($id);
         $book->borrowed=null;
-        $book->roof_id=null;
-        $book->category_id=null;
         $book->name=$request->name;
         $book->author=$request->author;
         $book->description=$request->description;
+        if($request->hasFile('book_img')){
+            File::delete('uploads/'.$book->book_img);
+            $file = $request->file('book_img');
+            $extension =$file->getClientOriginalExtension();
+            $filename= "imageEdit".time() . '.' . $extension;
+            $file->move('uploads/' , $filename );
+            $book->book_img =$filename;
+        }else {
+            return $request;
+            $book->book_img = "";
+        }
         $book->save();
         return redirect()->route('books.index');
     }
@@ -112,12 +120,18 @@ class BookController extends Controller
      */
     public function destroy($id)
     {
-        book::findOrFail($id)->delete();
+
+        $book= book::findOrFail($id);
+        File::delete('uploads/'.$book->book_img);
+        File::delete('uploads/'.$book->book_file);
+        $book->delete();
         return redirect()->route('books.index');
     }
-    public function showall()
+    public function showAll()
     {
         $books = Book::all();
-        return view("books.showall",compact('books'));
+        return view("books.showAll",compact('books'));
+
+
     }
 }

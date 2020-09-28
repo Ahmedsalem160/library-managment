@@ -26,6 +26,9 @@ Route::group(['middleware'=>'guest:admin'],function (){
 
 Route::group(['middleware'=>'auth:admin'],function (){
     Route::get('dashboard',[AdminController::class,'dash'])->name('dash');
+
+    Route::post('student',[DashboardController::class, 'search'])->name('search');
+
     Route::get('/reset-password',[AdminController::class,'resetPassword'])->name('resetPassword');
     Route::post('/reset-password',[AdminController::class,'reset'])->name('reset');
     //Book >>CRUD
@@ -38,6 +41,10 @@ Route::group(['middleware'=>'auth:admin'],function (){
     Route::post('delete/book/{id}',[DashboardController::class,'destroyBook'])->name('books.destroy');*/
 
     Route::resource('books', BookController::class);
+
+    Route::get('showAll',[BookController::class, 'showAll'])->name("show_all");
+    //Route::get('showAllBook',[App\Http\Controllers\StdBookController::class, 'showAll'])->name("show_book");
+    Route::get('AllStudent',[DashboardController::class, 'AllStudent'])->name("show_student");
 });
 
 
