@@ -22,7 +22,9 @@
                                         <h4 class="card-title">Book Name : <span style="font-size: 20px">{{$book->name}}</span></h4>
                                         <h4 class="card-title">Book Author : <span style="font-size: 20px">{{$book->author}}</span></h4>
                                         <p class="card-text"><h5 style="margin:0;">Description:</h5>{{$book->description}}</p>
-                                        <a style="width: 45%;" class="btn btn-primary" href="#"><i class="fas fa-book-open"></i> borrow IT</a>
+                                        @if($book->borrowed==null)
+                                            <a style="width: 45%;" class="btn btn-primary" href="{{route('borrowIT',$book->id)}}"><i class="fas fa-book-open"></i> borrow IT</a>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="card-footer card-footer bg-transparent border-info text-center">

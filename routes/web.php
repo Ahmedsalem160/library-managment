@@ -15,12 +15,26 @@ use App\Http\Controllers\StudentController;
 */
 
 
-Route::get('/index',[StudentController::class, 'index'])->name("show_all");
-
-Route::get('book/{id}',[StudentController::class,'showDetail'])->name('bookDetail');
-
+Route::group(['middleware'=>'auth:web'],function (){
+    Route::get('/index',[StudentController::class, 'index'])->name("show_all");
 
 
+
+
+    Route::get('book/{id}',[StudentController::class,'showDetail'])->name('bookDetail');
+
+//borrow
+
+
+    Route::get('borrow/books',[StudentController::class,'borrowBooks'])->name('borrowBooks');
+
+
+
+    Route::get('borrow/{id}',[StudentController::class,'borrow'])->name('borrowIT');
+
+
+    Route::get('back/book/{$id}',[StudentController::class,'backToShelf'])->name('back');
+});
 
 
 
