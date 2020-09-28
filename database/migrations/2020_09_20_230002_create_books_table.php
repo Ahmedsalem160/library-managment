@@ -20,7 +20,7 @@ class CreateBooksTable extends Migration
             $table->text('description');
             $table->text('book_img');
             $table->text('book_file');
-            $table->bigInteger('borrowed')->unsigned();
+            $table->bigInteger('borrowed')->unsigned()->nullable();
             $table->foreign('borrowed')->references('id')->on('users');
             $table->timestamps();
         });
