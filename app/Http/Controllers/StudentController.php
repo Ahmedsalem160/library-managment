@@ -25,14 +25,16 @@ class StudentController extends Controller
         DB::table('books')->where('id', $id)->update(['borrowed'=>$user_id]);
         return  redirect()->route('bookDetail',$id);
     }
-    public  function borrowBooks(){
-        $user=Auth::user();
-        $books=$user->books();
-        return view('students.borrowBooks',compact('books'));
-    }
+
 
     public function backToShelf($id){
         DB::table('books')->where('id', $id)->update(['borrowed'=>null]);
         return redirect()->back();
+    }
+
+    public  function borrowBooks(){
+        $user=Auth::user();
+        $books=$user->books();
+        return view('students.borrowBooks',compact('books'));
     }
 }

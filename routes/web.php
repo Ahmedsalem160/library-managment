@@ -21,7 +21,7 @@ Route::group(['middleware'=>'auth:web'],function (){
 
 
 
-    Route::get('book/{id}',[StudentController::class,'showDetail'])->name('bookDetail');
+
 
 //borrow
 
@@ -31,6 +31,9 @@ Route::group(['middleware'=>'auth:web'],function (){
 
 
     Route::get('borrow/{id}',[StudentController::class,'borrow'])->name('borrowIT');
+
+
+    Route::get('book/{id}',[StudentController::class,'showDetail'])->name('bookDetail');
 
 
     Route::get('back/book/{id}',[StudentController::class,'backToShelf'])->name('back');
