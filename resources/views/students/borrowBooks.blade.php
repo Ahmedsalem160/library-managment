@@ -20,6 +20,7 @@
                                         <h5 class="card-title">Book Name : <span style="font-size: 20px">{{$book->name}}</span></h5>
                                         <h5 class="card-title">Book Author : <span style="font-size: 20px">{{$book->author}}</span></h5>
                                         <p class="card-text"><h5 style="margin:0;">Description:</h5>{{$book->description}}</p>
+                                        <p class="card-text"><h5 style="margin:0;">Description:</h5>Return Date-time: {{$book->created_at->format('m d y')}}</p>
                                     </div>
                                     <div class="card-footer card-footer bg-transparent border-info">
                                         <td><a href="{{route("bookDetail",$book->id)}}" class="btn btn-info btn-simple btn-xs" style='color:#fff; text-decoration: none;'><i class="fa fa-eye" aria-hidden="true" style="color: #212c69"></i>&nbsp;Show Detail</a></td>
