@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginAdmin;
 use App\Models\Admin;
+use App\Models\Book;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -54,7 +55,8 @@ class AdminController extends Controller
     }
 
     public function dash(){
-        return view('admin.dashboard.books');
+        $books = Book::all();
+        return view('admin.dashboard.books', get_defined_vars());
     }
     // see students
     public function getstudents(){

@@ -65,10 +65,11 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(book $book)
     {
-        $book = book::findOrFail($id);
+//        $book = book::findOrFail($id);
         return view("books.show", compact('book'));
+
     }
 
     /**
@@ -77,9 +78,9 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(book $book)
     {
-        $book = book::findOrFail($id);
+
         return view("books.edit", compact('book'));
     }
 
@@ -90,9 +91,9 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(BookRequest $request, $id)
+    public function update(BookRequest $request, book $book)
     {
-        $book = book::findOrFail($id);
+
         $book->borrowed=null;
         $book->name=$request->name;
         $book->author=$request->author;
@@ -118,10 +119,9 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(book $book)
     {
 
-        $book= book::findOrFail($id);
         File::delete('uploads/'.$book->book_img);
         File::delete('uploads/'.$book->book_file);
         $book->delete();

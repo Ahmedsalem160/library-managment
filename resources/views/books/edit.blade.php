@@ -5,7 +5,7 @@
             <h3 style="font-size: 14px; line-height: 20px; height: 20px; margin: 0">Edit Books</h3>
         </div>
         <div class="container" style="padding: 15px">
-            <form method="post" action="{{ route('books.update',$book->id) }}" enctype="multipart/form-data">
+            <form method="post" action="{{ route('books.update',$book) }}" enctype="multipart/form-data">
                 @csrf
                 <input name="_method" type="hidden" value="PUT">
                 <div class="form-group row">
@@ -41,7 +41,15 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Add the book cover</label>
                     <div class="col-sm-10">
-                        <input type="file" name="book_img" class="form-control-file" id="img" name="book_img" value="{{asset('uploads/'.$book->book_img)}}">
+                        <input type="file" name="book_img" class="form-control-file" id="img" value="{{asset('uploads/'.$book->book_img)}}">
+                    </div>
+                </div>
+                <hr>
+                <hr>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Add new book file</label>
+                    <div class="col-sm-10">
+                        <input type="file" name="book_file" class="form-control-file" id="file" value="{{asset('uploads/'.$book->book_file)}}">
                     </div>
                 </div>
                 <hr>

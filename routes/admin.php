@@ -25,7 +25,7 @@ Route::group(['middleware'=>'guest:admin'],function (){
 
 
 Route::group(['middleware'=>'auth:admin'],function (){
-    Route::get('dashboard',[AdminController::class,'dash'])->name('dash');
+    Route::get('/dashboard',[AdminController::class,'dash'])->name('dash');
 
     Route::post('student',[DashboardController::class, 'search'])->name('search');
 
